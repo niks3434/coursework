@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../styles/style.css" rel="stylesheet" >
+    <title>Главная</title>
+</head>
+<body>
+    <div class="first-img">
+        <header>
+            <div class="container header__container">
+                <div class="logo-mini">
+                    <a href="#"><img src="../styles/images/Etch.svg" alt="logo"></a>
+                </div>
+
+                <ul class="nav">
+                    <li><a href="#about">О нас</a></li>
+                    <li><a href="masters.html">Мастера</a></li>
+                    <li><a href="entry.html">Запись</a></li>
+                    <li><a href="#review">Отзывы</a></li>
+                
+                </ul>
+                <ul class="social">
+                    <li class="social-icon"><a href="https://web.telegram.org/k/"><img src="../styles/images/icons/tg.svg" alt="tg"></a></li>
+                    <li class="social-icon"><a href="https://www.instagram.com"><img src="../styles/images/icons/instagram.svg" alt="instagram"></a></li>
+                    <li class="social-icon"><a href="https://m.vk.com/"><img src="../styles/images/icons/vk.svg" alt="vk"></a></li>
+                </ul>
+
+                <div class="burger">
+                    <span></span>
+                </div>
+        </div>
+        </header>
+        
+        <div class="main-content">
+            <h1>etch</h1>
+            <h3>Оставь свой след в истории</h3>
+        </div>
+        <div id="btn">
+            <button id="main-btn"><a href="entry.html">Записаться</a></button>
+        </div>
+    </div>
+
+    <script>
+        document.querySelector('.burger').addEventListener('click', function() {
+            this.classList.toggle('active');
+            document.querySelector('.nav').classList.toggle('open');
+        })
+    </script>
+
+    <div class="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item">
+                <img src="../styles/images/slide_img_first_page/1_img_slide.svg" alt="Image 1">
+            </div>
+
+            <div class="carousel-item">
+                <img src="../styles/images/slide_img_first_page/2_img_slide.svg" alt="Image 2">
+            </div>
+
+            <div class="carousel-item">
+                <img src="../styles/images/slide_img_first_page/3_img_slide.svg" alt="Image 3">
+            </div>
+            
+            <div class="carousel-item">
+                <img src="../styles/images/slide_img_first_page/4_img_slide.svg" alt="Image 4">
+            </div>
+        </div>
+    </div>
+
+    <script src="../styles/scripts/slider_first_page.js"></script>
+
+        <div class="description" id="about">
+            <p class="description-text">
+                Тату-студия "Etch" — это не просто место для татуировок, а мастерская историй. 
+                Основанная Нико, бывшим реставратором гравюр, она специализируется на уникальных дизайнах, которые отражают характер и опыт каждого клиента. 
+                На стенах — старинные гравюры и полки с книгами, а после завершения работы каждый клиент оставляет свой символ на металлической пластине, украшая стену памяти студии. 
+                "Etch" стала не только местом искусства, но и пространством, где люди оставляют свой след в истории. 
+            </p>
+        </div>
+    
+    <h2 id="review">отзывы</h2>     
+
+    <div class="testimonial-carousel">
+        <div class="two-cards-wrapper">
+            <div class="two-cards prev">
+                <div class="review">
+                    <div class="avatar">
+                        <img src="../styles/images/review_icon/girl.svg" alt="girl-icon" class="img-icon">
+                        <div class="rectangle-name">
+                            <span class="name">Катерина</span>    
+                        </div>
+                    </div>
+                    <div class="review-no-img">
+                        <img src="../styles/images/star_review.svg" alt="stars">
+                        <p class="text-review">
+                            Потрясающая атмосфера! Здесь чувствуешь себя частью чего-то большего. Моя татуировка получилась идеальной.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="review">
+                    <div class="avatar">
+                        <img src="../styles/images/review_icon/boy.svg" alt="boy-icon" class="img-icon">
+                        <div class="rectangle-name">
+                            <span class="name">Олег</span>    
+                        </div>
+                    </div>
+                    <div class="review-no-img">
+                        <img src="../styles/images/star_review.svg" alt="stars">
+                        <p class="text-review">
+                            Сама студия как произведение искусства. Каждая деталь продумана, и здесь чувствуешь себя уникальным. Спасибо за мой маленький шедевр!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="two-cards active">
+                <div class="review">
+                    <div class="avatar">
+                        <img src="../styles/images/review_icon/boy.svg" alt="boy-icon" class="img-icon">
+                        <div class="rectangle-name">
+                            <span class="name">Виктор</span>    
+                        </div>
+                    </div>
+                    <div class="review-no-img">
+                        <img src="../styles/images/star_review.svg" alt="stars">
+                        <p class="text-review">
+                            Etch — это не просто тату-студия, это место, где твоя история оживает на коже. Уникальный подход к каждому клиенту — просто восторг!
+                        </p>
+                    </div>
+                </div>
+
+                <div class="review">
+                    <div class="avatar">
+                        <img src="../styles/images/review_icon/girl.svg" alt="girl-icon" class="img-icon">
+                        <div class="rectangle-name">
+                            <span class="name">Анжелика</span>    
+                        </div>
+                    </div>
+                    <div class="review-no-img">
+                        <img src="../styles/images/star_review.svg" alt="stars">
+                        <p class="text-review">
+                            Я редко пишу отзывы, но 'Etch' заслуживает особого упоминания. Прекрасное обслуживание, креативный дизайн, и результат превзошел мои ожидания.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="two-cards next">
+                <div class="review">
+                    <div class="avatar">
+                        <img src="../styles/images/review_icon/boy.svg" alt="boy-icon" class="img-icon">
+                        <div class="rectangle-name">
+                            <span class="name">Николай</span>    
+                        </div>
+                    </div>
+                    <div class="review-no-img">
+                        <img src="../styles/images/star_review.svg" alt="stars">
+                        <p class="text-review">
+                            Нико — настоящий художник! Каждая линия, каждый штрих — словно произведение искусства. Очень рад, что выбрал именно эту студию.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="review">
+                    <div class="avatar">
+                        <img src="../styles/images/review_icon/girl.svg" alt="girl-icon" class="img-icon">
+                        <div class="rectangle-name">
+                            <span class="name">Анна</span>    
+                        </div>
+                    </div>
+                    <div class="review-no-img">
+                        <img src="../styles/images/star_review.svg" alt="stars">
+                        <p class="text-review">
+                            Впервые делала татуировку и переживала, но команда в 'Etch' создала такой уютный и вдохновляющий настрой, что я точно вернусь за следующей!
+                        </p>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+        
+    <script src="../styles/scripts/preview_slide.js"></script>   
+
+    <footer>
+        <ul class="ftr">
+            <li class="logo-mini"><a href="#"><img src="../styles/images/Etch.svg"  alt="logo"></a></li>
+            <li><a href="#about">О нас</a></li>
+            <li><a href="masters.html">Мастера</a></li>
+            <li><a href="entry.html">Запись</a></li>
+            <li><a href="#review">Отзывы</a></li>
+            <div class="social">
+                <div class="social-icon"><li><a href="https://web.telegram.org/k/"><img src="../styles/images/icons/tg.svg" alt="tg"></a></li></div>
+                <div class="social-icon"><li><a href="https://www.instagram.com"><img src="../styles/images/icons/instagram.svg" alt="instagram"></a></li></div>
+                <div class="social-icon"><li><a href="https://m.vk.com/"><img src="../styles/images/icons/vk.svg" alt="vk"></a></li></div>
+            </div>
+        </ul>
+        <ul class="ftr-script">
+            <li>Etch, 2024</li>
+            <li class="mobile">Контактный телефон: +7(999)999-99-99</li>
+        </ul>
+    </footer>
+</body>
+</html>
